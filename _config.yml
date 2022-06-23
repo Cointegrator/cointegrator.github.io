@@ -41,8 +41,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/jekyll-theme-antarctica" # the subpath of your site, e.g. /blog
-url: "https://sdtelectronics.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/cointegrator.github.io" # the subpath of your site, e.g. /blog
+url: "https://cointegrator.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 favicon: "" # the favicon for your site
 #avatar: ""
 
@@ -60,9 +60,9 @@ template:
 
 # Valine Comments
 valine:
-  appId: "GoHOdR14a6Qubobq68emQ8n2-MdYXbMMI"
-  appKey: "SCxcdTzApt8RXJVrtqsDXay0"
-  serverURLs: https://gohodr14.api.lncldglobal.com
+  appId: "pARXj8Nsyg8vKYpMOBcPKo7E-MdYXbMMI"
+  appKey: "tnOKKAhSoDGk8WCbDr7EV0rP"
+  serverURLs: https://parxj8ns.api.lncldglobal.com
 
 collections_dir: collections
 collections:
@@ -77,8 +77,7 @@ projects_categories:
 
 related_sites:
   Jekyll | Static site generator: https://jekyllrb.com
-  Source Repo | Theme antarctica: https://github.com/SdtElectronics/jekyll-theme-antarctica
-  My Homepage | SdtElectronics: https://sdtelectronics.github.io/
+  My Homepage | SdtElectronics: https://armadilloplanet.com/
 
 defaults:
   - scope:
