@@ -8,8 +8,8 @@
 <meta property="og:title" content="Creators’ guidance" />
 <meta name="author" content="Armadillosplanet.com" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="S-ensembler" />
-<meta property="og:description" content="S-ensembler" />
+<meta name="description" content="Upload data stream to S-Creator" />
+<meta property="og:description" content="Upload data stream to S-Creator" />
 <link rel="canonical" href="http://localhost:4000/announcement/2022/06/27/Creators-garden.html" />
 <meta property="og:url" content="http://localhost:4000/announcement/2022/06/27/Creators-garden.html" />
 <meta property="og:site_name" content="Armadillos’ Document" />
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Creators’ guidance" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Armadillosplanet.com"},"dateModified":"2022-06-27T00:00:00-07:00","datePublished":"2022-06-27T00:00:00-07:00","description":"S-ensembler","headline":"Creators’ guidance","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/announcement/2022/06/27/Creators-garden.html"},"url":"http://localhost:4000/announcement/2022/06/27/Creators-garden.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Armadillosplanet.com"},"dateModified":"2022-06-27T00:00:00-07:00","datePublished":"2022-06-27T00:00:00-07:00","description":"Upload data stream to S-Creator","headline":"Creators’ guidance","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/announcement/2022/06/27/Creators-garden.html"},"url":"http://localhost:4000/announcement/2022/06/27/Creators-garden.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="shortcut icon" href="">
     <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 100%22><text y=%22.9em%22 font-size=%2290%22>🧊</text></svg>">
@@ -62,12 +62,12 @@
     
     <li>
         <a href = "/categories.html#announcement" class = "lstH1 sidebarlstH1">announcement</a>
-        <span class = "invSpan">2</span>
+        <span class = "invSpan">4</span>
     </li>
     
     <li>
         <a href = "/categories.html#misc" class = "lstH1 sidebarlstH1">misc</a>
-        <span class = "invSpan">1</span>
+        <span class = "invSpan">2</span>
     </li>
     
 </ul>
@@ -87,6 +87,12 @@
                 
                 
                     <a class = "hashTag" href="/tags.html#version-control">version-control</a>
+                
+                
+                    <a class = "hashTag" href="/tags.html#risk">risk</a>
+                
+                
+                    <a class = "hashTag" href="/tags.html#stoploss">stoploss</a>
                 
                 
                     <a class = "hashTag" href="/tags.html#indicator">indicator</a>
@@ -126,7 +132,7 @@
     
     <li>
         <a href = "/archives.html#2022" class = "lstH1 sidebarlstH1">2022</a>
-        <span class = "invSpan">3</span>
+        <span class = "invSpan">6</span>
     </li>
     
 </ul><li id = "gallery" class = "sidebarElem">
@@ -174,107 +180,97 @@
     <div id = "midContTop"></div>
     <img class = "eyeCatcher" src = "https://user-images.githubusercontent.com/16822689/176060649-90ea7391-6e84-43ea-8012-254d64bf0d99.png"/><h1 class = "articleH1">Creators&#39; guidance</h1>
 <article class = "articleBody">
-    <h2 id="s-ensembler">
+    <h2 id="upload-data-stream-to-s-creator">
         
         
-          S-ensembler <a class = "hnk nf nf-mdi-link_variant" href="#s-ensembler"></a>
-        
-        
-      </h2>
-    
-      <h3 id="v03-jun-2022">
-        
-        
-          v0.3 (Jun, 2022) <a class = "hnk nf nf-mdi-link_variant" href="#v03-jun-2022"></a>
-        
-        
-      </h3>
-    
-<ul>
-  <li>Multiple bug fixed (missing projection length, etc.)</li>
-  <li>Add Matching Confidence in the backtesting mode</li>
-  <li>Change backtesting decision criteria with uncertainty and “BT return Up”, “BT return down”</li>
-  <li>Disabled “BT Buffer Move” and “BT Buffer Days”</li>
-</ul>
-      <h3 id="v02-may-2022">
-        
-        
-          v0.2 (May, 2022) <a class = "hnk nf nf-mdi-link_variant" href="#v02-may-2022"></a>
-        
-        
-      </h3>
-    
-<ul>
-  <li>Add “ensembled match” functionality to show the stacked plot</li>
-  <li>Further simplified user experience, support one click visualization</li>
-</ul>
-      <h3 id="v01-mar-2022">
-        
-        
-          v0.1 (Mar, 2022) <a class = "hnk nf nf-mdi-link_variant" href="#v01-mar-2022"></a>
-        
-        
-      </h3>
-    
-<ul>
-  <li>Support shape matching</li>
-  <li>Support basic projection</li>
-  <li>Support backtesting</li>
-  <li>Uncertainty and future projection estimation</li>
-</ul>
-      <h2 id="s-creator">
-        
-        
-          S-creator <a class = "hnk nf nf-mdi-link_variant" href="#s-creator"></a>
+          Upload data stream to S-Creator <a class = "hnk nf nf-mdi-link_variant" href="#upload-data-stream-to-s-creator"></a>
         
         
       </h2>
     
-      <h3 id="v03-jun-2022-1">
+
+<p>Here comes an easy to use package to upload processed financial indicator as a data stream to S-creator platform. 
+The data stream’s format should be stirctly defined as a time-series saved in panda dataframe - timestamps are saved as indices,
+values are saved as “signal” columns. Please find an example in the data folder.</p>
+      <h2 id="how-it-works">
         
         
-          v0.3 (Jun, 2022) <a class = "hnk nf nf-mdi-link_variant" href="#v03-jun-2022-1"></a>
+          How it works <a class = "hnk nf nf-mdi-link_variant" href="#how-it-works"></a>
+        
+        
+      </h2>
+    
+<p>For each indicator defined in config.ini:</p>
+<ul>
+  <li>Parse the configuration file and create a Stream class.</li>
+  <li>Download the indicator based on the function fun_load_data() defined in “loader/IndicatorName”</li>
+  <li>Process the indicator based on the function fun_compute_data() defined in “laoder/IndicatorName”, save the historic values in “data/init_with/” and the most recent value in “data/on_going/” directory respectively.</li>
+  <li>If the indicator has not been uploaded to S-creator as data-stream, create the data-stream for the indicator in S-Creator and upload its historic values to S-Creator.</li>
+  <li>Upload the most recent value of the indicator to S-creator</li>
+  <li>Save the models status to “states/indicator_states.csv”</li>
+  <li>Save the log file to “log/”</li>
+</ul>
+      <h2 id="key-steps">
+        
+        
+          Key steps <a class = "hnk nf nf-mdi-link_variant" href="#key-steps"></a>
+        
+        
+      </h2>
+    
+      <h3 id="0-update-your-session-cookie">
+        
+        
+          0. Update your session cookie <a class = "hnk nf nf-mdi-link_variant" href="#0-update-your-session-cookie"></a>
         
         
       </h3>
     
-<ul>
-  <li>Support hour granularity data</li>
-  <li>Support admin mode to update indicator without hour constraint</li>
-  <li>Support indicator’s tag in the API mode</li>
-</ul>
-      <h3 id="v02-apr-2022">
+<p>Please login the S Creator platform and copy your session cookie to confidential/session.ini, the session cookie can be found on your profile page (click the top right corner of your profile).</p>
+      <h3 id="1-setup-configini">
         
         
-          v0.2 (Apr, 2022) <a class = "hnk nf nf-mdi-link_variant" href="#v02-apr-2022"></a>
+          1. Setup config.ini <a class = "hnk nf nf-mdi-link_variant" href="#1-setup-configini"></a>
         
         
       </h3>
     
-<ul>
-  <li>Connect to S-Ensembler</li>
-  <li>Data stream visualization with two modes</li>
-  <li>Support edit stream name, descriptions after it has been created</li>
-  <li>Support appending stock name after it has been created</li>
-  <li>Support admin mode to upload Y</li>
-</ul>
-      <h3 id="v01-mar-2022-1">
+
+<p>config.ini: save all the meta data of data-streams, when you add a new data-stream, please set up the config.ini file
+so that the system will create and upload it to the platform automatically. After you setup the indicator, please make
+sure you have the right loader file defined in ‘loader/’ directory.</p>
+      <h3 id="2-define-a-loading-method">
         
         
-          v0.1 (Mar, 2022) <a class = "hnk nf nf-mdi-link_variant" href="#v01-mar-2022-1"></a>
+          2. Define a loading method <a class = "hnk nf nf-mdi-link_variant" href="#2-define-a-loading-method"></a>
         
         
       </h3>
     
-<ul>
-  <li>Support indicators uploading with API and website</li>
-  <li>Support indicators downloading with API and website</li>
-  <li>Stream publishing, subscription, owning</li>
-  <li>Support co-authorization</li>
-  <li>Indicator visualization</li>
-  <li>Public/private mode for indicators</li>
-  <li>Support give scores to data stream</li>
-</ul>
+
+<p>loader/YOURMETHOD.py: it includes important functions regarding how to download and process the files. The name of the
+file should be STRICT the name of the indicator you defined in the config.ini file. Otherwise the system cannot find it.</p>
+      <h3 id="3-run-the-main-function-daily">
+        
+        
+          3. Run the main function daily <a class = "hnk nf nf-mdi-link_variant" href="#3-run-the-main-function-daily"></a>
+        
+        
+      </h3>
+    
+
+<p>We assume the creator of the data function will maintain the data stream in S-creator everyday so that others can use it. So a good idea
+would be to schedule the main.py task using something like “crontab” (in Linux and Mac) in your local system.</p>
+      <h2 id="github-address">
+        
+        
+          Github address <a class = "hnk nf nf-mdi-link_variant" href="#github-address"></a>
+        
+        
+      </h2>
+    
+
+<p>https://github.com/armadillo001/SCreator.git</p>
 
 </article>
 </div>
@@ -353,55 +349,55 @@
 <div class = "rightElem">
     <h1 class = "lstH1">Table of Content</h1>
 
-    <ul id="toc"><li class="toc_t"><a href="#s-ensembler">
+    <ul id="toc"><li class="toc_t"><a href="#upload-data-stream-to-s-creator">
         
         
-          S-ensembler <a class = "hnk nf nf-mdi-link_variant" href="#s-ensembler"></a>
+          Upload data stream to S-Creator <a class = "hnk nf nf-mdi-link_variant" href="#upload-data-stream-to-s-creator"></a>
         
         
-      </a><ul><li class="toc_t"><a href="#v03-jun-2022">
+      </a></li><li class="toc_t"><a href="#how-it-works">
         
         
-          v0.3 (Jun, 2022) <a class = "hnk nf nf-mdi-link_variant" href="#v03-jun-2022"></a>
+          How it works <a class = "hnk nf nf-mdi-link_variant" href="#how-it-works"></a>
         
         
-      </a></li><li class="toc_t"><a href="#v02-may-2022">
+      </a></li><li class="toc_t"><a href="#key-steps">
         
         
-          v0.2 (May, 2022) <a class = "hnk nf nf-mdi-link_variant" href="#v02-may-2022"></a>
+          Key steps <a class = "hnk nf nf-mdi-link_variant" href="#key-steps"></a>
         
         
-      </a></li><li class="toc_t"><a href="#v01-mar-2022">
+      </a><ul><li class="toc_t"><a href="#0-update-your-session-cookie">
         
         
-          v0.1 (Mar, 2022) <a class = "hnk nf nf-mdi-link_variant" href="#v01-mar-2022"></a>
+          0. Update your session cookie <a class = "hnk nf nf-mdi-link_variant" href="#0-update-your-session-cookie"></a>
         
         
-      </a></li></ul></li><li class="toc_t"><a href="#s-creator">
+      </a></li><li class="toc_t"><a href="#1-setup-configini">
         
         
-          S-creator <a class = "hnk nf nf-mdi-link_variant" href="#s-creator"></a>
+          1. Setup config.ini <a class = "hnk nf nf-mdi-link_variant" href="#1-setup-configini"></a>
         
         
-      </a><ul><li class="toc_t"><a href="#v03-jun-2022-1">
+      </a></li><li class="toc_t"><a href="#2-define-a-loading-method">
         
         
-          v0.3 (Jun, 2022) <a class = "hnk nf nf-mdi-link_variant" href="#v03-jun-2022-1"></a>
+          2. Define a loading method <a class = "hnk nf nf-mdi-link_variant" href="#2-define-a-loading-method"></a>
         
         
-      </a></li><li class="toc_t"><a href="#v02-apr-2022">
+      </a></li><li class="toc_t"><a href="#3-run-the-main-function-daily">
         
         
-          v0.2 (Apr, 2022) <a class = "hnk nf nf-mdi-link_variant" href="#v02-apr-2022"></a>
+          3. Run the main function daily <a class = "hnk nf nf-mdi-link_variant" href="#3-run-the-main-function-daily"></a>
         
         
-      </a></li><li class="toc_t"><a href="#v01-mar-2022-1">
+      </a></li></ul></li><li class="toc_t"><a href="#github-address">
         
         
-          v0.1 (Mar, 2022) <a class = "hnk nf nf-mdi-link_variant" href="#v01-mar-2022-1"></a>
+          Github address <a class = "hnk nf nf-mdi-link_variant" href="#github-address"></a>
         
         
-      </a></li></ul></li></ul>
+      </a></li></ul>
 </div>
 
 <style>
