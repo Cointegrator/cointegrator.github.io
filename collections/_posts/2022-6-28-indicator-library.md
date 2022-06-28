@@ -16,23 +16,23 @@ Here are the default indicators to project SPY's future using the history. Pleas
 
 | Indicator name | Description  | Update Frequency |
 | :---------------------------- | :--------------: | :----: |
-| SMA50D_SPY   |              |       |
-| VIX_SPYLong  |              |       |
-| HYG          |               |       |
-| NATR         |               |       |
-| Volume       |              |       |
+| SMA50D_SPY   |   50D simple moving average (normalized)     |  Daily, after market close  |
+| VIX_SPYLong  |   VIX index value  |  Daily, after market close  |
+| HYG          |   iShares iBoxx $ High Yield Corporate Bond ETF    |  Daily, after market close  |
+| NATR         |  A market volatility indicator: [link](https://www.investopedia.com/terms/a/atr.asp)  | Daily, after market close  |
+| Volume       |   Volume compared to its 30D SMA   | Daily, after market close  |
 
 ### SPY30Y-Open
 Here are the default indicators to project SPY's future using the history. Please use it after the market open. It is an open price to next day's open price's projection.
 
 | Feature                       | Description  | Status |
 | :---------------------------- | :--------------: | :----: |
-| Volume_online  | Volume               | Daily, after market close      |
-| NATR_online    | 0.2              | Daily, after market close     |
-| CloseOpenSpread_online_SPY         | 0.2              | Daily, after market close      |
-| SMA50_online_SPY      | 0.2              | Daily, after market close    |
-| VIX_online_SPY                   | 0.2              | Daily, after market close    |
-| HYG_online_SPY   | 0.2              | Daily, after market close   |
+| Volume_online  | Volume compared to its 30D SMA             | Daily, after market open      |
+| NATR_online    | A market volatility indicator: [link](https://www.investopedia.com/terms/a/atr.asp)             | Daily, after market open     |
+| CloseOpenSpread_online_SPY         | Open price compared to the last day's close price normalized by last day's close price              | Daily, after market open      |
+| SMA50_online_SPY      | 50D simple moving average (normalized)          | Daily, after market open    |
+| VIX_online_SPY                   | VIX index value             | Daily, after market open    |
+| HYG_online_SPY   |  iShares iBoxx $ High Yield Corporate Bond ETF      | Daily, after market open   |
 
 ### Nasdaq
 Here are the default indicators to project Nasdaq's future using the history. Please use it after the market open. It is a close price to next day's close price's projection. Please expect one day delay. It is used to project the long history of the indicator.
