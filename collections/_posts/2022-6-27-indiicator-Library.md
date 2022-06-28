@@ -1,20 +1,33 @@
 ---
 layout: article
-title: Theme Antarctica
-abstract: An overview of this theme, including highlights and instructions of use
+title: Indicator library
+abstract: Everything you want to learn about the indicators
 categories: misc
-tags: antarctica theme
-eyeCatcher: https://refstatic.sk/article/od-antarktidy-sa-odtrhol-jeden-z-najvacsich-zaznamenanych-ladovcov-v-historii~25d92685f6b3b93aefe6.jpg?is=1440x513c&ic=0x439x1579x562&c=2w&s=e0efd5864ab1b7e41b8c7f5e0912f84b404ca30a53df8461106b377c19a24a21
+tags: indicator library
+eyeCatcher: https://user-images.githubusercontent.com/16822689/176058647-cf23baaf-c979-4e13-947e-1305b90151d1.png
 ---
 
 ---
-![4U6cuV.png](https://z3.ax1x.com/2021/09/22/4U6cuV.png)
 
 The goal of Antarctica is evolving to an elegant and feature-rich theme across platforms.
 
 [Live demo](https://sdtelectronics.github.io/jekyll-theme-antarctica/)
 
-## Highlights
+## Daily indicators
+
+| Feature                       | Planned Version  | Status |
+| :---------------------------- | :--------------: | :----: |
+| Scrollable widget bar         | 0.2              | √      |
+| Comment widget improvement    | 0.2              | √      |
+| Related sites widget          | 0.2              | √      |
+| Table of contents widget      | 0.2              | √      |
+| Pinned post                   | 0.2              | √      |
+| Abstract/excerpt in preview   | 0.2              | √      |
+| Optimize view on large screen | 0.3              |        |
+| Arcylic color scheme          | 0.3              |        |
+
+
+
 * Fully responsive layout achieves best visual on different screens
 * Flexible widgets provide extensible functionality
 * Integrated [NerdFonts](www.nerdfonts.com) with 3000+ icons
@@ -33,18 +46,3 @@ Customizable options are under [_config.yml](_config.yml). Coments inside will h
 
 ## Roadmap
 
-| Feature                       | Planned Version  | Status |
-| :---------------------------- | :--------------: | :----: |
-| Scrollable widget bar         | 0.2              | √      |
-| Comment widget improvement    | 0.2              | √      |
-| Related sites widget          | 0.2              | √      |
-| Table of contents widget      | 0.2              | √      |
-| Pinned post                   | 0.2              | √      |
-| Abstract/excerpt in preview   | 0.2              | √      |
-| Optimize view on large screen | 0.3              |        |
-| Arcylic color scheme          | 0.3              |        |
-
-## License
-This project is available under [GPLv3](LICENSE) License.
-
-If you find this project useful, please star this repository. Thanks.

@@ -41,16 +41,7 @@
                      Archives
                 </a>
             </li>
-            
-            {%- if site.template.portfolios contains "projects" -%}
-            <li class = "bottomPopLi">
-                <a class = "bottomLabel barElemLabel" href = "{{ '/projects.html' | relative_url }}">
-                    <i class = "btn nf nf-mdi-hexagon_multiple"></i>
-                     Projects
-                </a>
-            </li>
-            {%- endif -%}
-
+       
             {%- if site.template.portfolios contains "gallery" -%}
             <li class = "bottomPopLi">
                 <a class = "bottomLabel barElemLabel" href = "{{ '/gallery.html' | relative_url }}">

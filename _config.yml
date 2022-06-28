@@ -19,9 +19,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Theme Antarctica
+title: Armadillos' Document
 email: mocrecustomerservice@gmail.com
-author: Armadillos
+author: Armadillosplanet.com
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -74,7 +74,7 @@ projects_categories:
   - Software
 
 related_sites:
-  Model Creator | start building: http://armadilloplanet.com/index
+  Model Creator | Start Building: http://armadilloplanet.com/index
 
 defaults:
   - scope:
